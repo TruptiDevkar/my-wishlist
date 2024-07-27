@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scrollbar-width: thin; /* Options: auto, thin, or none */
+    scrollbar-color: #E98585 #f1f1f1; /* Thumb and track color */
+}
+/* Scrollbar Container */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust width for vertical scrollbar */
+    height: 12px; /* Adjust height for horizontal scrollbar */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #E98585; /* Background color of the track */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+    background: #E98585; /* Color of the scroll thumb */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #E98585; /* Color of the scroll thumb on hover */
+}
+
