@@ -3,14 +3,14 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-        <footer className="footer footer-center bg-[#FFB5A7] text-primary-content p-10">
+        <footer className="footer footer-center bg-[#e0afa0g] text-primary-content p-10">
   <aside>
   
-    <p className="font-bold text-black">
+    <p className="font-bold text-black custom-font">
       My-Wishlist
     
     </p>
-    <p className='text-black'>Copyright © {new Date().getFullYear()} - All right reserved</p>
+    <p className='text-black custom-font'>Copyright © {new Date().getFullYear()} - All right reserved</p>
   </aside>
   <nav>
     <div className="grid grid-flow-col gap-4">
