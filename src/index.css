@@ -4,7 +4,7 @@
 
 * {
     scrollbar-width: thin; /* Options: auto, thin, or none */
-    scrollbar-color: #E98585 #f1f1f1; /* Thumb and track color */
+    scrollbar-color: #F8EDEB #f1f1f1; /* Thumb and track color */
 }
 /* Scrollbar Container */
 ::-webkit-scrollbar {
@@ -28,4 +28,12 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #E98585; /* Color of the scroll thumb on hover */
 }
+.custom-font{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+   
+    font-style: normal;
+}
+  
+
 

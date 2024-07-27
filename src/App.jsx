@@ -70,24 +70,24 @@ function App() {
   return (
     <>
       <Navbar />
-    <div className="w-full min-h-screen bg-cover py-10 " style={{ backgroundImage: `url(${bg})` }}> 
+    <div className="w-full min-h-screen bg-cover py-10 bg-[#fff1e6]" > 
     
-      <div className="max-w-xl mx-auto p-10 bg-white min-h-[70vh] rounded-md  " >
-        <h1 className="font-bold text-2xl text-center ">My-wishlist <br/> Manage your wishlist at one place</h1>
+      <div className="max-w-xl mx-auto p-10 bg-[#f4f3ee] border-2 border-[#F9DCC4] min-h-[70vh] rounded-md  " >
+        <h1 className="font-semibold text-2xl text-center custom-font ">Manifest <br/> Manage your wishlist at one place</h1>
         <div className="py-2">
-          <label className=" font-medium mt-2">Add a wish </label>
+          <label className=" font-medium mt-2 custom-font">Add a wish </label>
           <div className="flex justify-center items-center gap-2">
             <input
               onChange={handleChange}
               value={todo}
               type="text"
               placeholder="Type here"
-              className="input w-full active:outline-none "
+              className="input w-full active:outline-[#FEC89A] outline-2 "
             />
             <button
               onClick={handleAdd}
               disabled={todo.length <=3}
-              className="btn bg-[#E98585] "
+              className="btn bg-[#FEC89A] "
           
              
             >
@@ -100,15 +100,18 @@ function App() {
           onChange={toggleFinished}
           type="checkbox"
           checked={ShowFinished}
-        />{" "}
+        />{" "} 
+        <span className="custom-font">
+
         Show Finished
-        <h2 className="">Your Wishes</h2>
-        <div className="todos flex flex-col gap-4 max-h-[50vh] overflow-scroll p-4">
+        </span>
+        <h2 className="custom-font my-2">Your Wishes</h2>
+        <div className="todos flex flex-col gap-4 max-h-[50vh] overflow-scroll p-4 ">
           
           {todos.map((item) => {
             return (
               (ShowFinished || !item.isCompleted) && (
-                <div key={item.id} className=" shadow-xl flex items-center justify-between py-6 px-8 text-bold  border-gray-600 border-[1px] rounded-md ">
+                <div key={item.id} className=" shadow-xl flex items-center justify-between py-6 px-8 text-bold bg-[#F9DCC4] border-[#FEC89A] border-[2px] rounded-md custom-font">
                 
                     
                     <div className={item.isCompleted ? "line-through" : ""} >
