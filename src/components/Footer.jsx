@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-        <footer className="footer footer-center bg-[#e0afa0g] text-primary-content p-10">
+        <footer className="footer footer-center bg-[#e0afa0] text-primary-content p-10">
   <aside>
   
     <p className="font-bold text-black custom-font">
